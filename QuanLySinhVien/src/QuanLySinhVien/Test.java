@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  *
  * @author Tran Trong Nghia MSSV: 17520802
  */
-public class test {
+public class Test {
     public static void main(String[] args) {
         try {
             DatabaseConnect db = new DatabaseConnect();
@@ -23,9 +23,9 @@ public class test {
                 System.out.println(rs.getString(1));
             }
         } catch (SQLException ex) {
-            Logger.getLogger(test.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(test.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
